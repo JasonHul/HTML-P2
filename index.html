@@ -7,8 +7,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>doc</title>
 </head>
-<body>
-    <div class="container pt-5">
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+  <div class="container pt-5">
         <h1>My Friends</h1>
         <p class="h3">P Diddy, Sadam Husan, Brack Obama</p>
         <h1>Example heading <span class="badge bg-secondary">New</span></h1>
@@ -142,5 +142,171 @@
           </div>
         </div>
       </div>
+      <ul class="list-group">
+        <li class="list-group-item active">Donut Delight</li>
+        <li class="list-group-item">Choco Glaze</li>
+        <li class="list-group-item">Sprinkles Supreme</li>
+      </ul>
+      
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item">Sugar Rush</li>
+        <li class="list-group-item">Crispy Crunch</li>
+        <li class="list-group-item">Creamy Dream</li>
+        <li class="list-group-item">Frosted Fantasy</li>
+      </ul>
+      
+      <ol class="list-group list-group-numbered">
+        <li class="list-group-item">Morning Munch</li>
+        <li class="list-group-item">Noon Nibble</li>
+        <li class="list-group-item">Midnight Snack</li>
+      </ol>
+      
+      <div class="card">
+        <div class="card-body">Mystery Box</div>
+      </div>
+      
+      <li><h5 class="dropdown-header">Pastry Picks</h5></li>
+      <li><a class="dropdown-item" href="#">Blueberry Bliss</a></li>
+      <li><a class="dropdown-item active" href="#">Maple Magic</a></li>
+      <li><a class="dropdown-item disabled" href="#">Cinnamon Swirl (Out of Stock)</a></li>
+      
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Bakers' Choice</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sweet Tooth</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Chocolate Fountain</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Strawberry Shortcake (Sold Out)</a>
+        </li>
+      </ul>
+      
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Brioche Bliss</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Lemon Twist</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Butter Croissant</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Macaron Magic (Coming Soon)</a>
+        </li>
+      </ul>
+      
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Flaky Favorites</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sweet Sweets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sugary Delights</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Frozen Puffs (Out of Season)</a>
+        </li>
+      </ul>
+      
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Pastry Parade</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Donut Daze</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Cupcake Craze</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Eclair Escape (Limited Time)</a>
+        </li>
+      </ul>
+      
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-sm bg-dark">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Berry Bonanza</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Caramel Cascade</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Fudge Fantasy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+      <!-- Modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pastryModal">
+        Open Pastry Surprise
+      </button>
+      
+      <!-- The Modal -->
+      <div class="modal" id="pastryModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Pastry Surprise</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal Body -->
+            <div class="modal-body">
+              Our latest creation! Find out what’s inside…
+            </div>
+      
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+      
+      <!-- Tooltip -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="Sweet Surprise!">Hover for sweetness</button>
+      <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Gimme some sugar!">Hover here</a>
+      
+      <!-- Popover -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Pop it!" data-bs-content="A delicious treat just for you.">Click for Pop</button>
+      <a href="#" title="Snack Time" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Sweet, chewy, and oh-so-delicious!">Hover for Snack</a>
+      
+      <!-- Offcanvas Sidebar -->
+      <div class="offcanvas offcanvas-start" id="snackSidebar">
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title">Snack Corner</h1>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>Try out our freshly baked treats!</p>
+          <button class="btn btn-secondary" type="button">Grab a Donut</button>
+        </div>
+      </div>
+      
+      <!-- Button to open the offcanvas sidebar -->
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#snackSidebar">
+        Explore Sweetness
+      </button>
+      
+      <span class="border border-1">Freshly Baked Delight</span>
+      <span class="border border-primary">Deliciously Sprinkled</span>
+      <span class="rounded">Round & Tasty</span>
+      <span class="rounded-pill" style="width:130px">Sugar-coated Goodness</span>
+      
+
 </body>
 </html>
